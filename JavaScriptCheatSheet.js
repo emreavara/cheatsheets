@@ -13,6 +13,9 @@ a cheatsheet while writing codes or to review basics.
 // Variables
 var variableName = "Variable Name"
 var intVariable = 3
+let booleanValue = true
+const city = "Istanbul"
+
 
 var arrays = [1, 2, 3, 4, 5, 6, 7]
 
@@ -22,6 +25,27 @@ function f2() { console.log("func2") }
 function f3() { console.log("func3") }
 
 var array = [f1, f2, f3]
+
+// -----------------------------------------------------------------------
+//                  Allowed and NOT Allowed manipulations
+// -----------------------------------------------------------------------
+
+var Name = "Emre"
+var Name = "Ali" // With var second decleration of a variable is allowed
+
+let Surname = "Avara"
+let Surname = "New Surname" // With let this feature is not allowed
+
+const password = "12345" // Value change is not allowed with const (However you can manipulate the referance type variables)
+const password = "123456" // NOT Allowed
+password = "123" // NOT Allowed
+
+const cities = ["Istanbul", "Ankara"]
+cities.push("Kayseri") // Addition to cities is allowed because we are not changing the value or address of the variable. We only add a member.
+cities.pop() // Allowed
+cities = ["Adana", "Antalya"] // NOT Allowed because we are addressing a new place in the memory
+
+
 
 // #######################################################################
 //                           Function Decleration
